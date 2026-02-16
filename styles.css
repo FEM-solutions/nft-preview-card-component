@@ -8,6 +8,7 @@
 * STATS
 * AUTHOR
 * REDUCED-MOTION 
+* ATTRIBUTION
 *
 **/
 
@@ -76,9 +77,16 @@ html {
   justify-content: center;
   align-items: center;
 
-  min-block-size: 100vh;
+  min-block-size: 100dvh;
   padding-block: var(--spacing-lg);
 
+  background-color: var(--blue-950);
+}
+
+.footer {
+  padding: var(--spacing-md);
+
+  text-align: center;
   background-color: var(--blue-950);
 }
 
@@ -232,6 +240,34 @@ html {
   .c-card__overlay,
   .c-card__title,
   .c-card__author-link {
+    transition-duration: 0.01ms;
+  }
+}
+
+/*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-light);
+  color: var(--white);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--cyan-400);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
     transition-duration: 0.01ms;
   }
 }
