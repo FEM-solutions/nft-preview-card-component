@@ -21,74 +21,68 @@
 
 <body>
 
-    <main>
+    <main class="main  l-container" aria-label="NFT preview card component">
 
-        <div class="l-container">
+        <article class="c-card">
 
-            <article class="c-card">
+            <a class="c-card__img-link" href="#">
+                <img class="c-card__img" src="./images/image-equilibrium.jpg"
+                    alt="Equilibrium #3429 NFT artwork featuring abstract geometric patterns in cyan and blue tones"
+                    width="604" height="604" fetchpriority="high">
 
-                <a class="c-card__img-link" href="#">
-                    <img class="c-card__img" src="./images/image-equilibrium.jpg"
-                        alt="Equilibrium #3429 NFT artwork featuring abstract geometric patterns in cyan and blue tones"
-                        width="604" height="604" fetchpriority="high">
+                <div class="c-card__overlay" role="presentation"></div>
+            </a>
 
-                    <div class="c-card__overlay" role="presentation"></div>
+
+            <div class="c-card__body">
+
+                <a class="c-card__title" href="#">
+                    Equilibrium #3429
                 </a>
+                <p class="c-card__description">
+                    Our Equilibrium collection promotes balance and calm.
+                </p>
+
+                <!-- Stats -->
+                <div class="c-card__stats">
+                    <div class="c-card__stat">
+                        <img src="./images/icon-ethereum.svg" alt="icon ethereum" width="11" height="18"
+                            aria-hidden="true">
+                        <span class="c-card__stat-value">0.041 ETH</span>
+                    </div>
+
+                    <div class="c-card__stat">
+                        <img src="./images/icon-clock.svg" alt="icon clock" width="17" height="17" aria-hidden="true">
+                        <span class="c-card__stat-value  c-card__stat-value--time">3 days left</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- c-card__body end -->
+
+            <hr class="c-card__divider">
 
 
-                <div class="c-card__body">
+            <section class="c-card__author">
 
-                    <a class="c-card__title" href="#">
-                        Equilibrium #3429
-                    </a>
-                    <p class="c-card__description">
-                        Our Equilibrium collection promotes balance and calm.
+                <div class="c-card__author-content">
+
+                    <img class="c-card__author-avatar" src="./images/image-avatar.png"
+                        alt="Profile picture of Jules Wyvern" width="43" height="43">
+
+                    <p class="c-card__author-text">
+                        Creation of
+                        <a class="c-card__author-link" href="#" aria-label="Explore more creations by Jules Wyvern">
+                            Jules Wyvern
+                        </a>
                     </p>
 
-                    <!-- Stats -->
-                    <div class="c-card__stats">
-                        <div class="c-card__stat">
-                            <img src="./images/icon-ethereum.svg" alt="icon ethereum" width="11" height="18"
-                                aria-hidden="true">
-                            <span class="c-card__stat-value">0.041 ETH</span>
-                        </div>
-
-                        <div class="c-card__stat">
-                            <img src="./images/icon-clock.svg" alt="icon clock" width="17" height="17"
-                                aria-hidden="true">
-                            <span class="c-card__stat-value  c-card__stat-value--time">3 days left</span>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- c-card__body end -->
 
-                <hr class="c-card__divider">
+            </section>
+            <!-- c-card__author end -->
 
-
-                <section class="c-card__author">
-
-                    <div class="c-card__author-content">
-
-                        <img class="c-card__author-avatar" src="./images/image-avatar.png"
-                            alt="Profile picture of Jules Wyvern" width="43" height="43">
-
-                        <p class="c-card__author-text">
-                            Creation of
-                            <a class="c-card__author-link" href="#" aria-label="Explore more creations by Jules Wyvern">
-                                Jules Wyvern
-                            </a>
-                        </p>
-
-                    </div>
-
-                </section>
-                <!-- c-card__author end -->
-
-            </article>
-
-        </div>
-        <!-- l-container end -->
+        </article>
 
     </main>
 
